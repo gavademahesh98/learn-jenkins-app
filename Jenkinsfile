@@ -7,7 +7,7 @@ pipeline{
         stage('stage 1'){
 
             steps{
-                echo "Hello World"
+                echo "Hello from Jenkins File"
             }
         }
 
