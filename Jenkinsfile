@@ -4,6 +4,13 @@ pipeline{
 
     stages{
 
+        stage{
+
+            steps{
+                cleanWs()
+            }
+        }
+
         stage('build'){
             agent {
 
