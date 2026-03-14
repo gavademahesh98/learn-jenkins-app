@@ -27,5 +27,14 @@ pipeline{
             }
         }
 
+        stage('test'){
+               sh '''
+              
+                  grep index.html build/
+                  npm test
+               
+               '''
+        }
+
     }
 }
