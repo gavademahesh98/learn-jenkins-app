@@ -20,8 +20,7 @@ pipeline{
                         ls -la
                         node --version
                         npm --version
-                        npm config set cache .npm
-                        npm install
+                        npm install --cache .npm
                         npm run build
                         ls -la
                 '''
