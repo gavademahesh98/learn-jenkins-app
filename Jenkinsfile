@@ -9,7 +9,7 @@ pipeline{
 
                 docker{
 
-                    image node
+                    image node:18-alpine
                 }
 
             }
