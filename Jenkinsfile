@@ -28,12 +28,14 @@ pipeline{
         }
 
         stage('test'){
+               steps{
                sh '''
               
                   grep index.html build/
                   npm test
                
                '''
+            }
         }
 
     }
