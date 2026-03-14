@@ -4,10 +4,17 @@ pipeline{
 
     stages{
 
-        stage('stage 1'){
+        stage('build'){
+            agent {
 
+                docker{
+
+                    image node:alpine
+                }
+
+            }
             steps{
-                echo "Hello from Jenkins File"
+                sh 'npm --version'
             }
         }
 
